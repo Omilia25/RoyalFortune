@@ -1,0 +1,131 @@
+body,html{
+	height: 100%;
+	margin: 0;
+	font-family: sans-serif;
+	line-height: 180%;
+	color:#666;
+	text-align: center;
+}
+.parallax{
+	background: url(10.jpg);
+	min-height: 100%;
+}
+.parallax2{
+	background: url(11.jpg);
+	min-height: 80%;
+}
+.parallax3{
+	background: url(3.jpg);
+	min-height: 60%;
+}
+.parallax4{
+	background: url(2.jpg);
+	min-height: 100%;
+}
+.parallax2, .parallax3, .parallax4{
+	position: relative;
+	opacity: .80;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.parallax{
+	opacity: .90;
+	color: yellow;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.heading{
+	height: 300px;
+}
+.heading h1{
+	font-size: 50px;
+	line-height: 1.3;
+	position: relative;
+	font-weight: bolder;
+	color: #fff;
+	animation: heading;
+	animation-duration:3s;
+	animation-fill-mode: forwards;
+}
+@keyframes heading{
+	0% {top: -50px}
+	100%{top: 200px}
+}
+.content{
+	color: #fff;
+	font-size: 25px;
+	font-weight: bold;
+	position: relative;
+	animation-name: content;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+}
+@keyframes content{
+	0% {right: -1000px}
+	100%{right: 0px}
+}
+.btn{
+	color: #fff;
+	display: inline-block;
+	text-decoration: none;
+	padding: 1rem 2rem;
+	border: #fff 1px solid;
+	border-style: bolder;
+	font-weight: bolder;
+	margin: 40px;
+	opacity: 0;
+	animation-name: btn;
+	animation-duration: 3s;
+	animation-delay: 3s;
+	animation-fill-mode: forwards;
+}
+@keyframes btn{
+	0% {opacity: 0}
+	100%{opacity: 100}
+}
+.heading-sm{
+	position: absolute;
+	top: 45%;
+	width: 100%;
+	color: #fff;
+	font-size: 250%;
+	text-transform: uppercase;
+	text-shadow: 0 0 10px #000;
+}
+.two-col{
+	float: left;
+	width: 42%;
+	padding: 0 4%;
+	text-align: left;
+}
+.text{
+	overflow: auto;
+	padding: 50px 80px;
+}
+#grey{
+	background-color: gray;
+	color: #fff;
+}
+#dark{
+	overflow: auto;
+	padding: 50px 80px;
+	background-color: #000;
+	color: #f2f2f2;
+}
+@media(max-width: 768px){
+	.heading{
+		font-size: 250%;
+	}
+	.heading-sm{
+		font-size: 180%;
+	}
+	.two-col{
+		width: 180%;
+		padding: 0;
+		text-align: center;
+	}
+}
